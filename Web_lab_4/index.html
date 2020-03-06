@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<form action="script.php" enctype="multipart/form-data">
+    Enter text here: 
+    <input type="text" name="textField" required="required">
+    <select name="list">
+        <option value=""></option>
+        <option value="element1">One</option>
+        <option value="element2">Two</option>
+        <option value="element3">Three</option>
+		<option value="element4">Four</option>
+    </select>
+    <br>
+    Please enclose attachment if you use POST method.
+    <input type="file" name="userFile">
+    <br><br>
+    <button type="submit" formmethod="POST">Send via POST method</button><br>
+    <button type="submit" formmethod="GET">Send via GET method</button>
+    </form>
+</body>
+</html> 	
